@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B100 — 地下百階を目指すローグライク×ホラー×アクションTPS</title>
+<meta name="description" content="エレベーターで地下百階を目指す、ローグライク×ホラー×アクションTPS。無料体験版（Windows）配信中。">
+<meta name="theme-color" content="#0a0807">
+<!-- 公開先の URL が変わったら、og:url と og:image も書き換える -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="B100">
+<meta property="og:title" content="B100 — 地下百階まで、降りろ。">
+<meta property="og:description" content="エレベーターで地下百階を目指す、ローグライク×ホラー×アクションTPS。無料体験版（Windows）配信中。">
+<meta property="og:url" content="https://tairaita.github.io/b100/">
+<meta property="og:image" content="https://tairaita.github.io/b100/img/og.jpg">
+<meta property="og:image:width" content="920">
+<meta property="og:image:height" content="430">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="img/icon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#about"><span class="ja">本文へ</span><span class="en">Skip to content</span></a>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="bar-logo" href="#top"><img src="img/logo.webp" alt="B100" width="1000" height="229"></a>
+    <div class="elev" aria-hidden="true"><span class="elev-arrow">▼</span><span class="elev-num">1F</span></div>
+    <nav class="bar-nav" aria-label="Menu">
+      <a href="#about"><span class="ja">ゲーム紹介</span><span class="en">About</span></a>
+      <a href="#zones"><span class="ja">エリア</span><span class="en">Zones</span></a>
+      <a href="#shots"><span class="ja">ギャラリー</span><span class="en">Gallery</span></a>
+      <a href="#download"><span class="ja">ダウンロード</span><span class="en">Download</span></a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="top" data-floor="0">
+  <picture class="hero-bg">
+    <source media="(max-width: 720px)" srcset="img/hero_small.webp">
+    <img src="img/hero.webp" alt="" width="2400" height="775" fetchpriority="high">
+  </picture>
+  <div class="wrap hero-in">
+    <h1 class="hero-logo"><img src="img/logo.webp" alt="B100" width="1000" height="229"></h1>
+    <p class="hero-tag">
+      <span class="ja">地下百階を目指す、ローグライク×ホラー×アクションTPS</span>
+      <span class="en">A roguelike horror third-person shooter, one hundred floors down</span>
+    </p>
+    <p class="hero-lead">
+      <span class="ja">撃って稼ぎ、10階ごとに待つ主を倒して降りていく。帰還すれば稼ぎは貯金、死ねばすべてを失う。あなたはどこで引き返す？</span>
+      <span class="en">Gun down the dead for points and beat a guardian every ten floors. Return home to bank your haul, or push deeper and risk losing it all.</span>
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-red" href="#download"><span class="ja">無料体験版をダウンロード</span><span class="en">Download the free demo</span></a>
+      <a class="btn btn-ghost js-steam">
+        <span class="soon"><span class="ja">Steam 近日登場</span><span class="en">Coming soon to Steam</span></span>
+        <span class="live"><span class="ja">Steam でウィッシュリストに追加</span><span class="en">Wishlist on Steam</span></span>
+      </a>
+    </div>
+    <p class="hero-meta">Windows 10 / 11<i>·</i>日本語 / English<i>·</i><span class="js-version">v0.1.0</span></p>
+  </div>
+  <a class="hero-down" href="#about"><span class="ja">降りる</span><span class="en">Descend</span></a>
+</section>
+
+<section class="sec" id="about" data-floor="1">
+  <div class="wrap about">
+    <div>
+      <div class="sec-head">
+        <p class="sec-floor">B01</p>
+        <p class="sec-zone"><span class="ja">プロローグ</span><span class="en">Prologue</span></p>
+        <h2><span class="ja">地下百階まで、降りろ。</span><span class="en">One hundred floors down.</span></h2>
+      </div>
+      <p class="prose ja">古びたビルの地下に、どこまでも続くエレベーターがある。<br>階を下るたびに景色は変わり、敵は強く、静けさは不気味になる。<br>目指すのは最深部、B100。</p>
+      <p class="prose en">Beneath an old building, an elevator keeps going. Every floor down the walls change, the dead get tougher and the quiet gets worse. Your goal is the bottom: B100.</p>
+    </div>
+    <figure class="frame">
+      <img data-shot="01_office_fight" src="img/shots/ja/01_office_fight.webp" alt="" width="1600" height="900" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="loop" data-floor="7">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B07</p>
+      <p class="sec-zone"><span class="ja">1フロア1〜3分</span><span class="en">1–3 minutes a floor</span></p>
+      <h2><span class="ja">撃って、稼いで、降りる</span><span class="en">Shoot, earn, descend.</span></h2>
+    </div>
+    <ol class="cards">
+      <li class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/><circle cx="12" cy="12" r="1" class="fill"/></svg>
+        <h3><span class="ja">撃つ</span><span class="en">Shoot</span></h3>
+        <p><span class="ja">弾を当てるたび、倒すたびにポイントが入る。ヘッドショットはボーナス。</span><span class="en">Every hit and every kill earns points, with a bonus for headshots.</span></p>
+      </li>
+      <li class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4V14"/><circle cx="12" cy="17" r=".9" class="fill"/></svg>
+        <h3><span class="ja">買う</span><span class="en">Spend</span></h3>
+        <p><span class="ja">壁の武器を買い、ミステリーボックスで一発逆転を狙い、パークのアンプルで自分を強化する。</span><span class="en">Buy guns off the walls, gamble on the Mystery Box and drink perk ampoules.</span></p>
+      </li>
+      <li class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 13l6-6 6 6M6 19l6-6 6 6"/></svg>
+        <h3><span class="ja">鍛える</span><span class="en">Upgrade</span></h3>
+        <p><span class="ja">改造台で武器を最大+5まで強化。レアリティはコモンからレジェンドまで5段階。</span><span class="en">Upgrade weapons at the mod bench up to +5, across five rarities from Common to Legendary.</span></p>
+      </li>
+      <li class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 10h8l-4 5z" class="fill"/></svg>
+        <h3><span class="ja">降りる</span><span class="en">Descend</span></h3>
+        <p><span class="ja">クリア条件はフロアごとに変わる。殲滅、生存、電源の復旧、端末の防衛、そしてボス。</span><span class="en">Every floor rolls its own goal: exterminate, survive, restore the power, hold the terminal, or kill the boss.</span></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="choice" data-floor="10">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B10</p>
+      <p class="sec-zone"><span class="ja">フロアの主を撃破</span><span class="en">Guardian down</span></p>
+      <h2><span class="ja">帰還か、続行か</span><span class="en">Go home, or keep going?</span></h2>
+    </div>
+    <p class="prose"><span class="ja">10階ごとにフロアの主が待つ。倒したあとのエレベーターで選ぶ。</span><span class="en">A floor guardian waits every ten floors. After it falls, the elevator asks:</span></p>
+    <div class="choice">
+      <div class="opt opt-home">
+        <p class="opt-mark" aria-hidden="true">▲</p>
+        <h3><span class="ja">帰還</span><span class="en">Return home</span></h3>
+        <p><span class="ja">持っているポイントを貯金し、武器を武器庫に預ける。次からはこの階の下から出撃できる。</span><span class="en">Bank your points, store your guns in the armory, and start future runs from this depth.</span></p>
+      </div>
+      <p class="choice-or"><span class="ja">それとも</span><span class="en">or</span></p>
+      <div class="opt opt-deep">
+        <p class="opt-mark" aria-hidden="true">▼</p>
+        <h3><span class="ja">続行</span><span class="en">Keep going</span></h3>
+        <p><span class="ja">そのまま下へ。稼ぎは増えるが、死ねば持ち物とポイントはすべて地下に消える。</span><span class="en">More floors, more points. But die, and everything you carry is lost underground.</span></p>
+      </div>
+    </div>
+    <p class="prose small"><span class="ja">貯金はホームで恒久強化に使える。体力、初期資金、パーク枠、保険など、少しずつ確実に強くなれる。</span><span class="en">Banked points buy permanent upgrades at home: health, starting cash, perk slots, insurance and more. Slow, certain progress.</span></p>
+  </div>
+</section>
+
+<section class="sec" id="zones" data-floor="23">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B23</p>
+      <p class="sec-zone"><span class="ja">フロア案内</span><span class="en">Floor directory</span></p>
+      <h2><span class="ja">10のエリア、10体の主</span><span class="en">Ten zones, ten guardians</span></h2>
+    </div>
+    <p class="prose"><span class="ja">エリアごとに、敵の顔ぶれとギミックが変わる。</span><span class="en">Each zone brings new enemies and its own hazard.</span></p>
+    <ol class="board">
+      <li class="board-head" aria-hidden="true">
+        <span><span class="ja">フロア</span><span class="en">Floor</span></span>
+        <span><span class="ja">エリア</span><span class="en">Zone</span></span>
+        <span><span class="ja">ギミック</span><span class="en">Hazard</span></span>
+        <span><span class="ja">フロアの主</span><span class="en">Guardian</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B01–B10</span>
+        <span class="z-name"><span class="ja">廃オフィス</span><span class="en">Abandoned Offices</span></span>
+        <span class="z-haz"><span class="ja">停電。ときどき明かりが落ちる</span><span class="en">Blackouts: the power keeps cutting out</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">管理職</span><span class="en">The Manager</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B11–B20</span>
+        <span class="z-name"><span class="ja">地下駐車場</span><span class="en">Underground Parking</span></span>
+        <span class="z-haz"><span class="ja">車の警報。撃てば鳴り、やがて爆発する</span><span class="en">Car alarms: shoot a car and it wails, then blows</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">解体屋</span><span class="en">The Wrecker</span></span>
+      </li>
+      <li class="board-demo"><span class="ja">▲ 体験版はここまで（B20 のボスまで）</span><span class="en">▲ The demo ends here, after the B20 guardian</span></li>
+      <li class="zone">
+        <span class="z-floor">B21–B30</span>
+        <span class="z-name"><span class="ja">病棟</span><span class="en">Hospital Ward</span></span>
+        <span class="z-haz"><span class="ja">毒ガス。緑の霧に注意</span><span class="en">Toxic gas: watch the green haze</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">婦長</span><span class="en">The Head Nurse</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B31–B40</span>
+        <span class="z-name"><span class="ja">下水道</span><span class="en">Sewers</span></span>
+        <span class="z-haz"><span class="ja">浸水。誰もが足を取られる</span><span class="en">Flooding: everyone wades slower</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">肥大体</span><span class="en">The Bloat</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B41–B50</span>
+        <span class="z-name"><span class="ja">研究所</span><span class="en">Research Lab</span></span>
+        <span class="z-haz"><span class="ja">防犯レーザー。奴らを誘い込め</span><span class="en">Security lasers: lure them in</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">被検体ゼロ</span><span class="en">Subject Zero</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B51–B60</span>
+        <span class="z-name"><span class="ja">地下鉄駅</span><span class="en">Subway Station</span></span>
+        <span class="z-haz"><span class="ja">地震。赤い円の場所に落下物</span><span class="en">Tremors: debris falls on the red circles</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">車掌</span><span class="en">The Conductor</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B61–B70</span>
+        <span class="z-name"><span class="ja">団地</span><span class="en">Housing Block</span></span>
+        <span class="z-haz"><span class="ja">ライトの光の中でしか見えない奴がいる</span><span class="en">Something only shows in your flashlight</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">隣人</span><span class="en">The Neighbor</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B71–B80</span>
+        <span class="z-name"><span class="ja">鋳造所</span><span class="en">Foundry</span></span>
+        <span class="z-haz"><span class="ja">溶けた鉄だまり。踏めば焼かれる</span><span class="en">Molten pools burn anything that steps in</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">溶鉄</span><span class="en">The Smelter</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B81–B90</span>
+        <span class="z-name"><span class="ja">肉の巣</span><span class="en">The Flesh Nest</span></span>
+        <span class="z-haz"><span class="ja">壁から腕が伸びる。壁に近づくな</span><span class="en">Arms burst from the walls. Keep away</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span><span class="ja">母体</span><span class="en">The Matriarch</span></span>
+      </li>
+      <li class="zone">
+        <span class="z-floor">B91–B100</span>
+        <span class="z-name"><span class="ja">深淵</span><span class="en">The Abyss</span></span>
+        <span class="z-haz"><span class="ja">見えているものが本物とは限らない</span><span class="en">Not everything you see is real</span></span>
+        <span class="z-boss"><span class="z-lbl"><span class="ja">主：</span><span class="en">Guardian: </span></span>？？？</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec-hall" id="hall" data-floor="31">
+  <div class="hall-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B31</p>
+      <p class="sec-zone"><span class="ja">エレベーターホール</span><span class="en">Elevator hall</span></p>
+      <h2><span class="ja">静かなエレベーターホール</span><span class="en">The quiet elevator hall</span></h2>
+    </div>
+    <p class="prose hall-lines ja"><span>フロアとフロアの間にある、エレベーターホール。</span><span>補給と準備の場所だが、ここではときどき何かが起きる。</span><span>明滅する照明、どこからか聞こえる物音。</span><span>そして、まれに……。</span></p>
+    <p class="prose hall-lines en"><span>Between floors there is a hall to restock and get ready.</span><span>Mostly it is quiet. Lights flicker.</span><span>Something moves somewhere.</span><span>And sometimes...</span></p>
+    <p class="hall-note"><span class="ja">ホールでは中断セーブができる。少しずつ遊べる。</span><span class="en">Suspend your run at any elevator hall and play in short sessions.</span></p>
+  </div>
+</section>
+
+<section class="sec" id="shots" data-floor="48">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B48</p>
+      <p class="sec-zone"><span class="ja">ギャラリー</span><span class="en">Gallery</span></p>
+      <h2><span class="ja">地下の様子</span><span class="en">What's down there</span></h2>
+    </div>
+    <ul class="gallery">
+      <li><a class="shot" href="img/shots/ja/01_office_fight.webp" data-shot="01_office_fight">
+        <img data-shot="01_office_fight" data-size="small" src="img/shots/ja/01_office_fight_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">廃オフィス：端末を守り抜け</span><span class="en">Abandoned Offices: hold the terminal</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/02_parking_horde.webp" data-shot="02_parking_horde">
+        <img data-shot="02_parking_horde" data-size="small" src="img/shots/ja/02_parking_horde_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">地下駐車場に押し寄せる群れ</span><span class="en">A horde in the parking garage</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/03_boss.webp" data-shot="03_boss">
+        <img data-shot="03_boss" data-size="small" src="img/shots/ja/03_boss_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">フロアの主</span><span class="en">A floor guardian</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/04_abyss.webp" data-shot="04_abyss">
+        <img data-shot="04_abyss" data-size="small" src="img/shots/ja/04_abyss_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">B96　深淵</span><span class="en">B96, The Abyss</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/05_elevator_hall.webp" data-shot="05_elevator_hall">
+        <img data-shot="05_elevator_hall" data-size="small" src="img/shots/ja/05_elevator_hall_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">エレベーターホールのパーク自販機</span><span class="en">Perk machines in an elevator hall</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/06_home_base.webp" data-shot="06_home_base">
+        <img data-shot="06_home_base" data-size="small" src="img/shots/ja/06_home_base_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">ホーム：貯金で恒久強化</span><span class="en">Home base: spend banked points</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/07_mystery_box.webp" data-shot="07_mystery_box">
+        <img data-shot="07_mystery_box" data-size="small" src="img/shots/ja/07_mystery_box_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">ミステリーボックス</span><span class="en">The Mystery Box</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/08_blackout.webp" data-shot="08_blackout">
+        <img data-shot="08_blackout" data-size="small" src="img/shots/ja/08_blackout_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">停電と懐中電灯</span><span class="en">Blackout, flashlight on</span></span>
+      </a></li>
+      <li><a class="shot" href="img/shots/ja/09_terminal.webp" data-shot="09_terminal">
+        <img data-shot="09_terminal" data-size="small" src="img/shots/ja/09_terminal_s.webp" alt="" width="640" height="360" loading="lazy">
+        <span class="cap"><span class="ja">防衛端末</span><span class="en">The defense terminal</span></span>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="features" data-floor="64">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B64</p>
+      <p class="sec-zone"><span class="ja">特徴</span><span class="en">Features</span></p>
+      <h2><span class="ja">数字で見る B100</span><span class="en">B100 by the numbers</span></h2>
+    </div>
+    <ul class="stats">
+      <li><b>100</b><span><span class="ja">フロア</span><span class="en">floors</span></span></li>
+      <li><b>10</b><span><span class="ja">エリア</span><span class="en">zones</span></span></li>
+      <li><b>10</b><span><span class="ja">ボス</span><span class="en">bosses</span></span></li>
+      <li><b>14</b><span><span class="ja">武器</span><span class="en">weapons</span></span></li>
+      <li><b>7</b><span><span class="ja">パーク</span><span class="en">perks</span></span></li>
+      <li><b>21</b><span><span class="ja">実績</span><span class="en">achievements</span></span></li>
+    </ul>
+    <ul class="feats">
+      <li><span class="ja">毎回変わる自動生成フロア</span><span class="en">Procedurally generated floors, different every run</span></li>
+      <li><span class="ja">5段階のレアリティと、+5までの改造</span><span class="en">Five rarities and weapon upgrades up to +5</span></li>
+      <li><span class="ja">グレネードとパワーアップ（弾薬全回復、一撃必殺、ポイント2倍、殲滅）</span><span class="en">Grenades and power-ups: Max Ammo, Insta-Kill, Double Points, Annihilation</span></li>
+      <li><span class="ja">ホームでの恒久強化と武器庫</span><span class="en">Permanent upgrades and a weapon armory at home</span></li>
+      <li><span class="ja">エレベーターホールで中断セーブ</span><span class="en">Suspend your run at any elevator hall</span></li>
+      <li><span class="ja">日本語・英語、キーボード＆マウスとゲームパッドに対応</span><span class="en">English and Japanese, keyboard &amp; mouse and gamepad</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec-dl" id="download" data-floor="77">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B77</p>
+      <p class="sec-zone"><span class="ja">無料体験版</span><span class="en">Free demo</span></p>
+      <h2><span class="ja">体験版をダウンロード</span><span class="en">Download the demo</span></h2>
+    </div>
+    <div class="dl">
+      <div class="dl-main">
+        <p class="dl-lead"><span class="ja">無料。B20 のボスを倒すところまで遊べます。</span><span class="en">Free. Play through to the B20 guardian.</span></p>
+        <dl class="dl-spec">
+          <div><dt><span class="ja">バージョン</span><span class="en">Version</span></dt><dd class="js-version">v0.1.0</dd></div>
+          <div><dt><span class="ja">ファイル</span><span class="en">File</span></dt><dd><span class="ja">ZIP（約 <span class="js-size">72</span> MB）</span><span class="en">ZIP (about <span class="js-size">72</span> MB)</span></dd></div>
+          <div><dt>OS</dt><dd>Windows 10 / 11 (64-bit)</dd></div>
+          <div><dt><span class="ja">言語</span><span class="en">Languages</span></dt><dd>日本語 / English</dd></div>
+        </dl>
+        <a class="btn btn-red btn-big js-download">
+          <span class="ready"><span class="ja">▼ ダウンロード（ZIP）</span><span class="en">▼ Download (ZIP)</span></span>
+          <span class="pending"><span class="ja">準備中</span><span class="en">Coming soon</span></span>
+        </a>
+        <div class="dl-mobile">
+          <p><span class="ja">スマホやタブレットでは遊べません。Windows の PC でこのページを開いてください。</span><span class="en">Phones and tablets aren't supported. Open this page on a Windows PC.</span></p>
+          <button type="button" class="btn btn-ghost js-copy">
+            <span class="idle"><span class="ja">このページのリンクをコピー</span><span class="en">Copy the link to this page</span></span>
+            <span class="done"><span class="ja">コピーしました</span><span class="en">Copied</span></span>
+          </button>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><b>1</b><span><span class="ja">ダウンロードした ZIP を右クリックして「すべて展開」</span><span class="en">Right-click the ZIP and choose "Extract All"</span></span></li>
+        <li><b>2</b><span><span class="ja">展開したフォルダの <code>B100Demo.exe</code> をダブルクリック</span><span class="en">Double-click <code>B100Demo.exe</code> in the extracted folder</span></span></li>
+        <li><b>3</b><span><span class="ja">「WindowsによってPCが保護されました」と出たら「詳細情報」→「実行」</span><span class="en">If "Windows protected your PC" appears, click "More info", then "Run anyway"</span></span></li>
+      </ol>
+      <p class="dl-note">
+        <span class="ja">ZIP の中から直接起動すると動きません。<code>B100Demo.exe</code> と <code>B100Demo.pck</code> は同じフォルダに置いたままにしてください。体験版の進行は、同じ PC なら製品版に引き継がれます。</span>
+        <span class="en">The game won't start from inside the ZIP. Keep <code>B100Demo.exe</code> and <code>B100Demo.pck</code> in the same folder. Demo progress carries over to the full game on the same PC.</span>
+      </p>
+    </div>
+    <div class="steam-card">
+      <p><span class="ja">製品版は Steam で発売予定。最深部の B100 まで降りられます。</span><span class="en">The full game is coming to Steam, all the way down to B100.</span></p>
+      <a class="btn btn-ghost js-steam">
+        <span class="soon"><span class="ja">Steam 近日登場</span><span class="en">Coming soon to Steam</span></span>
+        <span class="live"><span class="ja">Steam でウィッシュリストに追加</span><span class="en">Wishlist on Steam</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="specs" data-floor="88">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-floor">B88</p>
+      <p class="sec-zone"><span class="ja">スペック</span><span class="en">Specs</span></p>
+      <h2><span class="ja">動作環境と操作</span><span class="en">Requirements &amp; controls</span></h2>
+    </div>
+  <div class="specs">
+    <div>
+      <h3 class="tbl-title"><span class="ja">動作環境</span><span class="en">System requirements</span></h3>
+      <table class="tbl">
+        <thead><tr><th></th><th><span class="ja">最低</span><span class="en">Minimum</span></th><th><span class="ja">推奨</span><span class="en">Recommended</span></th></tr></thead>
+        <tbody>
+          <tr><th>OS</th><td>Windows 10 (64-bit)</td><td>Windows 10 / 11 (64-bit)</td></tr>
+          <tr><th>CPU</th><td><span class="ja">4コア 2.5GHz 程度</span><span class="en">Quad-core 2.5 GHz</span></td><td><span class="ja">4コア 3.5GHz 以上</span><span class="en">Quad-core 3.5 GHz or better</span></td></tr>
+          <tr><th><span class="ja">メモリ</span><span class="en">Memory</span></th><td>4 GB</td><td>8 GB</td></tr>
+          <tr><th>GPU</th><td><span class="ja">Vulkan 1.0 対応（GTX 1050 / RX 560 程度）</span><span class="en">Vulkan 1.0 (GTX 1050 / RX 560 class)</span></td><td><span class="ja">GTX 1660 / RX 5600 以上</span><span class="en">GTX 1660 / RX 5600 or better</span></td></tr>
+          <tr><th><span class="ja">容量</span><span class="en">Storage</span></th><td>300 MB</td><td>300 MB</td></tr>
+        </tbody>
+      </table>
+      <p class="note"><span class="ja">目安です。まだ多くの PC では試していません。動きが重いときは「設定 → 画質」を下げてください。</span><span class="en">Estimates only; not yet tested on many PCs. If it runs slowly, lower Settings &gt; Graphics quality.</span></p>
+    </div>
+    <div>
+      <h3 class="tbl-title"><span class="ja">操作</span><span class="en">Controls</span></h3>
+      <table class="tbl tbl-keys">
+        <thead><tr><th></th><th><span class="ja">キーボード・マウス</span><span class="en">Keyboard &amp; mouse</span></th><th><span class="ja">ゲームパッド</span><span class="en">Gamepad</span></th></tr></thead>
+        <tbody>
+          <tr><th><span class="ja">移動</span><span class="en">Move</span></th><td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></td><td><span class="ja">左スティック</span><span class="en">Left stick</span></td></tr>
+          <tr><th><span class="ja">視点</span><span class="en">Look</span></th><td><span class="ja">マウス</span><span class="en">Mouse</span></td><td><span class="ja">右スティック</span><span class="en">Right stick</span></td></tr>
+          <tr><th><span class="ja">射撃 / エイム</span><span class="en">Fire / Aim</span></th><td><span class="ja">左クリック / 右クリック</span><span class="en">Left / right click</span></td><td>RT / LT</td></tr>
+          <tr><th><span class="ja">リロード</span><span class="en">Reload</span></th><td><kbd>R</kbd></td><td>X</td></tr>
+          <tr><th><span class="ja">調べる・買う</span><span class="en">Use / Buy</span></th><td><kbd>F</kbd> <span class="ja">または</span><span class="en">or</span> <kbd>E</kbd></td><td>X</td></tr>
+          <tr><th><span class="ja">ダッシュ</span><span class="en">Sprint</span></th><td><kbd>Shift</kbd></td><td><span class="ja">左スティック押し込み</span><span class="en">Click left stick</span></td></tr>
+          <tr><th><span class="ja">しゃがみ・スライディング</span><span class="en">Crouch / Slide</span></th><td><kbd>Ctrl</kbd> <span class="ja">または</span><span class="en">or</span> <kbd>C</kbd></td><td>B</td></tr>
+          <tr><th><span class="ja">回避ロール</span><span class="en">Dodge roll</span></th><td><kbd>Space</kbd></td><td>A</td></tr>
+          <tr><th><span class="ja">近接攻撃</span><span class="en">Melee</span></th><td><kbd>V</kbd></td><td><span class="ja">右スティック押し込み</span><span class="en">Click right stick</span></td></tr>
+          <tr><th><span class="ja">グレネード</span><span class="en">Grenade</span></th><td><kbd>G</kbd></td><td>RB</td></tr>
+          <tr><th><span class="ja">武器の切り替え</span><span class="en">Switch weapon</span></th><td><span class="ja">ホイール、</span><span class="en">Wheel, </span><kbd>Q</kbd>, <kbd>1</kbd>–<kbd>3</kbd></td><td>Y</td></tr>
+          <tr><th><span class="ja">ライト</span><span class="en">Flashlight</span></th><td><kbd>T</kbd></td><td><span class="ja">十字キー上</span><span class="en">D-pad up</span></td></tr>
+          <tr><th><span class="ja">操作表</span><span class="en">Controls list</span></th><td><span class="ja"><kbd>Tab</kbd> 長押し</span><span class="en">Hold <kbd>Tab</kbd></span></td><td><span class="ja">Back 長押し</span><span class="en">Hold Back</span></td></tr>
+          <tr><th><span class="ja">ポーズ</span><span class="en">Pause</span></th><td><kbd>Esc</kbd></td><td>Start</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" data-floor="96">
+  <div class="wrap narrow">
+    <div class="sec-head">
+      <p class="sec-floor">B96</p>
+      <p class="sec-zone"><span class="ja">よくある質問</span><span class="en">FAQ</span></p>
+      <h2><span class="ja">うまく動かないときは</span><span class="en">If something goes wrong</span></h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary><span class="ja">「WindowsによってPCが保護されました」と表示される</span><span class="en">"Windows protected your PC" appears</span></summary>
+        <div class="faq-a">
+          <p class="ja">個人制作のゲームで、デジタル署名がないために表示されます。「詳細情報」→「実行」で起動できます。ZIP を展開する前に、ZIP を右クリック →「プロパティ」→「許可する」にチェックを入れておくと、表示されなくなります。</p>
+          <p class="en">This indie game isn't code-signed, so Windows shows the warning. Click "More info", then "Run anyway". To skip it, right-click the ZIP before extracting, open Properties and tick "Unblock".</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="ja">起動しない・画面が真っ黒のまま</span><span class="en">It won't start, or the screen stays black</span></summary>
+        <div class="faq-a">
+          <p class="ja">ZIP を展開してから起動しているか、<code>.exe</code> と <code>.pck</code> が同じフォルダにあるかを確かめてください。それでも動かないときは、グラフィックドライバーを最新にしてください（Vulkan 対応の GPU が必要です）。</p>
+          <p class="en">Make sure you extracted the ZIP and that the <code>.exe</code> and <code>.pck</code> are in the same folder. If it still fails, update your graphics driver (a Vulkan-capable GPU is required).</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="ja">動きが重い</span><span class="en">It runs slowly</span></summary>
+        <div class="faq-a">
+          <p class="ja">「設定 → 画質」を下げてください。</p>
+          <p class="en">Lower Settings &gt; Graphics quality.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="ja">セーブデータはどこ？</span><span class="en">Where is my save data?</span></summary>
+        <div class="faq-a">
+          <p class="ja"><code>%APPDATA%\B100\</code> にあります。<code>profile.json</code> を消すと最初からになります。</p>
+          <p class="en">In <code>%APPDATA%\B100\</code>. Deleting <code>profile.json</code> starts you over.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="ja">Mac やスマホで遊べる？</span><span class="en">Can I play on a Mac or a phone?</span></summary>
+        <div class="faq-a">
+          <p class="ja">いまは Windows 版だけです。</p>
+          <p class="en">Windows only for now.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="ja">製品版はいつ出る？</span><span class="en">When is the full game out?</span></summary>
+        <div class="faq-a">
+          <p class="ja">Steam で発売予定です。日にちが決まったら、このページでお知らせします。</p>
+          <p class="en">It's coming to Steam. The date will be announced on this page.</p>
+        </div>
+      </details>
+      <details class="js-contact" hidden>
+        <summary><span class="ja">不具合を見つけた・感想を送りたい</span><span class="en">Found a bug, or want to send feedback?</span></summary>
+        <div class="faq-a">
+          <p class="ja"><a class="js-contact-link" target="_blank" rel="noopener">こちら</a>から送ってください。ゲームが落ちたときは、<code>%APPDATA%\B100\logs\godot.log</code> を添えてもらえると助かります。</p>
+          <p class="en">Send it <a class="js-contact-link" target="_blank" rel="noopener">here</a>. If the game crashed, please attach <code>%APPDATA%\B100\logs\godot.log</code>.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" data-floor="100">
+  <div class="wrap">
+    <p class="foot-floor">B100</p>
+    <p class="foot-line"><span class="ja">最深部で待つものは、製品版で。</span><span class="en">What waits at the bottom? Find out in the full game.</span></p>
+    <img class="foot-logo" src="img/logo.webp" alt="B100" width="1000" height="229" loading="lazy">
+    <p class="credits">
+      <span class="ja">モデル・アニメーション：Quaternius（CC0）　効果音：Still North Media、artisticdude、Kenney（CC0）　音楽：Joth、congusbongus、yd、Bonsaiheldin、Davieplier、AppPro、glitchart（CC0）　フォント：Noto Sans JP、Dela Gothic One（SIL OFL）　Godot Engine で制作</span>
+      <span class="en">Models and animations: Quaternius (CC0). Sounds: Still North Media, artisticdude, Kenney (CC0). Music: Joth, congusbongus, yd, Bonsaiheldin, Davieplier, AppPro, glitchart (CC0). Fonts: Noto Sans JP, Dela Gothic One (SIL OFL). Made with Godot Engine.</span>
+    </p>
+    <p class="foot-small"><span class="ja">暴力・流血表現を含みます。</span><span class="en">Contains violence and blood.</span>　© 2026 <span class="js-dev">B100</span></p>
+  </div>
+</footer>
+
+<dialog class="lightbox" data-ja-label="スクリーンショット" data-en-label="Screenshot" aria-label="スクリーンショット">
+  <button type="button" class="lb-btn lb-close" data-ja-label="閉じる" data-en-label="Close" aria-label="閉じる">×</button>
+  <button type="button" class="lb-btn lb-prev" data-ja-label="前へ" data-en-label="Previous" aria-label="前へ">‹</button>
+  <figure class="lb-fig"><img src="data:," alt=""><figcaption></figcaption></figure>
+  <button type="button" class="lb-btn lb-next" data-ja-label="次へ" data-en-label="Next" aria-label="次へ">›</button>
+</dialog>
+</body>
+</html>
