@@ -60,7 +60,7 @@
 
   // ---------- full version for code holders ----------
   // The code goes to cfg.fullApi (a Supabase Edge Function); a valid one comes back with a
-  // download link that only works for a few minutes.
+  // download link that only works for a while (under an hour).
 
   const codeForm = document.querySelector(".js-code");
   if (codeForm && cfg.fullApi) {
