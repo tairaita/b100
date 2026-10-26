@@ -455,6 +455,40 @@ a.btn-red:not([href]) { background: var(--panel-2); color: var(--dim); border: 1
   color: var(--dim);
 }
 
+/* full version for code holders (shown only when config.js has fullApi) */
+.code-card {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid var(--line-2);
+  border-radius: 10px;
+  background: var(--panel);
+}
+.code-card[hidden] { display: none; }
+.code-head h3 { font-family: var(--display); font-weight: 400; font-size: 1.25rem; }
+.code-head p { margin-top: 6px; color: var(--dim); font-size: 0.92rem; }
+.code-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.code-input {
+  flex: 1 1 15em;
+  min-width: 0;
+  padding: 0.8em 1em;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  background: #0c0908;
+  color: var(--text);
+  font: inherit;
+  font-family: ui-monospace, Consolas, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.code-input::placeholder { color: var(--faint); }
+.code-row .btn-red:hover:not(:disabled) { background: var(--red); }
+.code-row .btn:disabled { opacity: 0.6; cursor: wait; }
+.code-msg { min-height: 1.6em; color: var(--dim); font-size: 0.92rem; }
+.code-msg.bad { color: var(--red-text); }
+.code-note { color: var(--faint); font-size: 0.82rem; }
+
 /* specs */
 .specs { display: grid; gap: 56px; }
 .tbl { width: 100%; border-collapse: collapse; font-size: 0.9rem; line-height: 1.6; }
@@ -544,7 +578,8 @@ a.btn-red:not([href]) { background: var(--panel-2); color: var(--dim); border: 1
   .hero::before {
     background: linear-gradient(180deg, rgba(10, 8, 7, 0.1) 0%, rgba(10, 8, 7, 0.25) 32%, var(--bg) 60%);
   }
-  .hero-cta .btn { flex: 1 1 100%; }
+  .hero-cta .btn,
+  .code-row .btn { flex: 1 1 100%; }
   .zone { grid-template-columns: auto 1fr; padding: 14px 16px; }
   .board-head { display: none; }
   .z-haz,

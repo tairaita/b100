@@ -6,4 +6,5 @@ window.B100_SITE = {
   steamUrl: "",       // Steam のストアページ。空のあいだは「Steam 近日登場」と表示
   developer: "",      // フッターの「© 2026 ○○」に出す名前。空なら B100
   contactUrl: "",     // 感想・不具合の受付先（X、Google フォームなど）。空なら FAQ に出さない
+  fullApi: "https://pqsfaorecaxxrkyiqkzi.supabase.co/functions/v1/full-download", // 製品版のコードを確かめる窓口（Supabase）。空ならコードの入力欄を出さない
 };

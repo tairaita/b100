@@ -58,6 +58,61 @@
     $$(".js-contact-link").forEach((a) => (a.href = cfg.contactUrl));
   }
 
+  // ---------- full version for code holders ----------
+  // The code goes to cfg.fullApi (a Supabase Edge Function); a valid one comes back with a
+  // download link that only works for a few minutes.
+
+  const codeForm = document.querySelector(".js-code");
+  if (codeForm && cfg.fullApi) {
+    codeForm.hidden = false;
+    $$(".js-code-faq").forEach((el) => (el.hidden = false));
+    const input = codeForm.querySelector(".code-input");
+    const button = codeForm.querySelector("button");
+    const msg = codeForm.querySelector(".code-msg");
+    const texts = {
+      checking: ["確かめています…", "Checking…"],
+      invalid: ["コードが違います。もう一度確かめてください。", "That code isn't right. Please check it and try again."],
+      expired: ["このコードは期限が切れています。", "This code has expired."],
+      used_up: ["このコードは、ダウンロードできる回数を使い切りました。", "This code has no downloads left."],
+      revoked: ["このコードは使えなくなりました。", "This code has been turned off."],
+      not_ready: ["いまは製品版をお渡しできません。しばらくしてから試してください。", "The full version isn't available right now. Please try again later."],
+      error: ["うまくつながりませんでした。時間をおいて試してください。", "Couldn't connect. Please try again in a while."],
+    };
+    const say = (pair, bad, extra = "") => {
+      msg.classList.toggle("bad", Boolean(bad));
+      msg.replaceChildren(
+        ...pair.map((t, i) => {
+          const span = document.createElement("span");
+          span.className = i === 0 ? "ja" : "en";
+          span.textContent = t + extra;
+          return span;
+        })
+      );
+    };
+    codeForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      button.disabled = true;
+      say(texts.checking);
+      try {
+        const res = await fetch(cfg.fullApi, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code: input.value }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.url) {
+          say(["ダウンロードを始めます：", "Starting the download: "], false, data.file || "");
+          location.href = data.url;
+        } else {
+          say(texts[data.error] || texts.error, true);
+        }
+      } catch (err) {
+        say(texts.error, true);
+      }
+      button.disabled = false;
+    });
+  }
+
   $$(".js-copy").forEach((b) =>
     b.addEventListener("click", async () => {
       const url = location.href.split("#")[0];
